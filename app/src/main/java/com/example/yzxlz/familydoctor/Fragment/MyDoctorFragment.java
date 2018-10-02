@@ -24,12 +24,6 @@ public class MyDoctorFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        button=getActivity().findViewById(R.id.my_doctor);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity(),"My Doctor",Toast.LENGTH_SHORT).show();
-            }
-        });
+
     }
 }

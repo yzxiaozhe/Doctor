@@ -1,27 +1,23 @@
 package com.example.yzxlz.familydoctor;
 
-import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.example.yzxlz.familydoctor.Fragment.ChatFragment;
 import com.example.yzxlz.familydoctor.Fragment.HomeFragment;
 import com.example.yzxlz.familydoctor.Fragment.MyDoctorFragment;
-import com.example.yzxlz.familydoctor.Fragment.RecommendFragment;
+import com.example.yzxlz.familydoctor.Fragment.DiagnoseFragment;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
     private HomeFragment Hfragment;
-    private RecommendFragment Rfragment;
+    private DiagnoseFragment Rfragment;
     private ChatFragment Cfragment;
     private MyDoctorFragment Mfragment;
     private Fragment[] fragments;
@@ -40,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initFragment(){
         Hfragment=new HomeFragment();
-        Rfragment=new RecommendFragment();
+        Rfragment=new DiagnoseFragment();
         Cfragment=new ChatFragment();
         Mfragment=new MyDoctorFragment();
         fragments=new Fragment[]{Hfragment,Rfragment,Cfragment,Mfragment};

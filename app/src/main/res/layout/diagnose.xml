@@ -4,10 +4,10 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/recommend"
+        android:id="@+id/diagnose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recommend" />
+        android:text="Diagnose" />
 
 
 </LinearLayout>

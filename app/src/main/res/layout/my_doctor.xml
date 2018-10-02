@@ -1,13 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/my_doctor_draw"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/my_doctor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Doctor" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/put_in_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="请选择登陆端口"
+            android:textSize="40dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/doctorImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="71dp"
+                android:background="@drawable/doctor"/>
+
+            <ImageView
+                android:id="@+id/patientImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="71dp"
+                android:background="@drawable/patient"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="332dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/history"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/history" />
+
+            <ImageView
+                android:id="@+id/favourite"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/favourite" />
+
+            <ImageView
+                android:id="@+id/update"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/update" />
+
+            <ImageView
+                android:id="@+id/about"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/about" />
+
+            <TextView
+                android:id="@+id/history_text"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/history"
+                android:text="浏览历史"
+                android:textSize="30dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/favourite_text"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/favourite"
+                android:layout_toEndOf="@+id/history"
+                android:text="我的收藏"
+                android:textSize="30dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/update"
+                android:layout_toEndOf="@+id/history"
+                android:text="更新"
+                android:textSize="30dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/about"
+                android:text="关于"
+                android:textSize="30dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/history"
+                android:background="#000000"></View>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/favourite"
+                android:background="#000000"></View>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/update"
+                android:background="#000000"></View>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/about"
+                android:layout_marginTop="-100dp"
+                android:background="#000000"></View>
+        </RelativeLayout>
+    </RelativeLayout>
 
 
 </LinearLayout>

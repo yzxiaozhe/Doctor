@@ -14,7 +14,7 @@
     <item
         android:id="@+id/recommend_page"
         android:icon="@drawable/recommend_page"
-        android:title="推荐"/>
+        android:title="诊断"/>
 
     <item
         android:id="@+id/my_page"
