@@ -84,7 +84,7 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="28dp"
             android:gravity="center"
-            android:text="请先登陆并补充您的资料>>"
+            android:text="请先登陆并补充您的资料"
             android:textColor="#fe0101"
             android:textSize="25dp" />
     </RelativeLayout>

@@ -25,12 +25,6 @@ public class DiagnoseFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        button=getActivity().findViewById(R.id.diagnose);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity(),"Recommend",Toast.LENGTH_SHORT).show();
-            }
-        });
+
     }
 }

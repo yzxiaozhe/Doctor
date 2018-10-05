@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.example.yzxlz.familydoctor.R;
 
 public class ChatFragment extends Fragment {
-    private Button button;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -24,13 +24,7 @@ public class ChatFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        button=getActivity().findViewById(R.id.chat);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity(),"Chat",Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
     }
 }

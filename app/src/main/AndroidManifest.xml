@@ -19,6 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Function.Sign_in_patient"></activity>
+        <activity android:name=".Function.Sign_in_doctor"></activity>
     </application>
 
 </manifest>
