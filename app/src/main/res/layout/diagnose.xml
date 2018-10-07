@@ -33,6 +33,7 @@
             android:background="@drawable/peitu" />
 
         <TextView
+            android:id="@+id/test"
             android:layout_width="201dp"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"

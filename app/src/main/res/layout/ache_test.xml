@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#3f57f5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="自我诊断"
+            android:textColor="#ffff"
+            android:textSize="35dp" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/home_yellow_draw"
+                    android:gravity="center"
+                    android:text="请勾选您容易出现的状况(下拉会有后续选项)"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="356dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/touyun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="头晕(常在突然下蹲或者起立时出现)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/touteng"
+                    android:layout_width="322dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="头痛(多为持续性钝痛或脉动性胀痛，甚至有炸裂样剧痛)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="356dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/fanzhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="烦躁，心悸(遇事敏感激动)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/shimian"
+                    android:layout_width="322dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="失眠(入睡困难或者早醒，睡眠不实，易惊醒)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/jiyi"
+                    android:layout_width="322dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="注意力不集中，记忆力衰退(近期记忆衰退，对过去的事物却记忆犹新)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/zhiti"
+                    android:layout_width="322dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="肢体麻木(手指、足趾麻木或皮肤如蚊行感或项背肌肉紧张)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="356dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/chuxu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="出血(出现鼻血)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="356dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="容易饿，吃得多" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="356dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/mabi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="手脚麻痹、发抖，手指活动不灵有阵痛感" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="357dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/pilao"
+                    android:layout_width="321dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="无缘无故感到疲劳，尿液呈现白色，有酸甜的气味" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="356dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/yanjing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="眼睛容易疲劳，视力急剧下降" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="356dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/tizhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="体重不明原因急剧下降" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="357dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/xionggu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="胸骨中上段后方的疼痛(逐渐加剧甚至让人喘不过气)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="357dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/shangfu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="上腹痛" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="357dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/exin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="恶心" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="356dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/outu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="呕吐" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="357dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/shaoxin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="烧心" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="357dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/touyunmuxuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="头晕目眩" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="357dp"
+                android:layout_height="45dp">
+
+                <CheckBox
+                    android:id="@+id/xintiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="频繁发作的心跳加速和心律不齐" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_gravity="bottom">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+
+           android:background="#fe5555"
+           android:gravity="center"
+           android:text="开始诊断"
+           android:textColor="#ffff"
+           android:textSize="25dp" />
+   </LinearLayout>
+</LinearLayout>

@@ -1,11 +1,16 @@
 package com.example.yzxlz.familydoctor;
 
+import android.content.Intent;
+import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.example.yzxlz.familydoctor.Fragment.ChatFragment;
 import com.example.yzxlz.familydoctor.Fragment.HomeFragment;
@@ -22,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private MyDoctorFragment Mfragment;
     private Fragment[] fragments;
     private int lastfragment;       //记录上一个fragment
+    private TextView show_sign_name;
 
 
 
@@ -32,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView=(BottomNavigationView)findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(changeFragment);
         initFragment();
+
+        show_sign_name=(TextView)findViewById(R.id.show_sign_name);
+
     }
 
     private void initFragment(){
@@ -118,4 +127,27 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode==1&& resultCode==10){
+            RelativeLayout sign_in_layout=(RelativeLayout)findViewById(R.id.sign_in_layout);
+            sign_in_layout.setVisibility(View.GONE);
+            findViewById(R.id.finish_data_layout).setVisibility(View.GONE);
+            findViewById(R.id.exit_sign).setVisibility(View.VISIBLE);
+            /*//回传数据到此处
+            Bundle bundle=data.getExtras();
+            show_sign_name.setText(bundle.getString("doctor_name"));
+*/
+        }
+        if (requestCode==2&& resultCode==10){
+            RelativeLayout sign_in_layout=(RelativeLayout)findViewById(R.id.sign_in_layout);
+            sign_in_layout.setVisibility(View.GONE);
+            findViewById(R.id.exit_sign).setVisibility(View.VISIBLE);
+
+
+
+        }
+
+    }
 }

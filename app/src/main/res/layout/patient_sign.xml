@@ -29,10 +29,12 @@
         <EditText
             android:id="@+id/editText"
             android:layout_width="202dp"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_alignTop="@+id/key"
+            android:layout_marginTop="-16dp"
             android:layout_toEndOf="@+id/key"
-            android:gravity="bottom" />
+            android:gravity="bottom"
+            android:inputType="textPassword"/>
 
         <TextView
             android:id="@+id/textView15"
@@ -59,12 +61,14 @@
         <EditText
             android:id="@+id/adm_put_in"
             android:layout_width="202dp"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_alignTop="@+id/textView15"
+            android:layout_marginTop="-16dp"
             android:layout_toEndOf="@+id/textView15"
             android:gravity="bottom" />
 
         <Button
+            android:id="@+id/patient_button"
             android:layout_width="62dp"
             android:layout_height="81dp"
 
